@@ -40,4 +40,4 @@ Actions and outcomes return as evidence. The model can learn from measured respo
 
 Uncertainty is part of state, not an inconvenient footnote. If observations are sparse, stale or contradictory, the most accurate output may be suppression.
 
-The companion **Governed Digital Twin Reference** demonstrates that principle with generic synthetic data. Its constants and algorithms are intentionally educational and do not reproduce the Opti-U implementation.
+The companion **Governed Digital Twin Reference** applies that principle to generic generated data. Its constants and algorithms do not reproduce the Opti-U implementation.

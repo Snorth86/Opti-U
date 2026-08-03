@@ -1,10 +1,10 @@
-# Public evidence ledger
+# Validation record
 
 Validation claims are revision-bound. This ledger records what a class of evidence establishes and, just as importantly, what it does not.
 
-The private evidence pack contains reproducible commands, raw artefacts and source mappings available for appropriate diligence under NDA. Public entries are deliberately aggregated to avoid exposing internal topology, fixtures, schemas and implementation seams.
+Reproducible commands, raw artefacts and source mappings are held with the private production repository. The results below are aggregated to protect internal topology, fixtures, schemas and implementation details.
 
-| Evidence class | Public result | Supports | Does not establish |
+| Validation area | Result | Supports | Does not establish |
 |---|---|---|---|
 | Controlled adversarial scenarios | 24 of 24 runs completed across three deterministic seeds, with no orchestration failures | Integrated operation and conservative response under controlled representative conditions | Live-user effectiveness or production scale |
 | Heterogeneous export processing | 1,370 longitudinal daily records across three export families processed through evidence harnesses with no parse failures | Ability to normalise varied real-world export structures in the tested harnesses | Universal provider correctness or continuous production ingestion |

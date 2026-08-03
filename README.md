@@ -1,22 +1,18 @@
 # Opti-U
 
-### The adaptive coaching layer above connected health
+### The AI Performance Digital Twin for adaptive coaching
 
-Wearables have made human signals abundant. They can tell us how we slept, how hard we trained and how today compares with yesterday.
+Wearables can tell us how we slept, how hard we trained and how today compares with yesterday. That is useful, but it stops too early.
 
-That is useful. It also stops too early.
+The harder question is not simply *what happened?* It is *what helps this person, under these conditions, and how certain are we?*
 
-The harder question is not *what happened?* It is *what helps this person, under these conditions, and how certain are we?*
-
-Opti-U is being built to answer that question: a closed-loop adaptive coaching system powered by a behavioural-physiological Digital Twin.
+Opti-U is built to answer that question. It connects longitudinal wearable and behavioural data with persistent state estimation, adaptive coaching and user-approved N-of-1 experiments.
 
 ```text
 Sense → Estimate → Forecast → Experiment → Measure → Learn
   ↑                                                    │
   └──────────────── governed feedback ─────────────────┘
 ```
-
-This repository explains the public architecture thesis, the evidence posture and the boundaries around the private production system. It contains no production source code or proprietary decision logic.
 
 ## The system in one minute
 
@@ -28,7 +24,7 @@ Opti-U combines five reinforcing layers:
 4. User-approved N-of-1 experiments that measure response.
 5. Governed population learning that can advise but never overwrite the individual.
 
-The intelligence core is independent of large language models. Generative AI can help communicate and explain. It cannot own state, declare safety, establish causal effect or silently increase its influence.
+The intelligence core is independent of large language models. Generative AI can communicate and explain structured results, but it cannot own user state, determine safety, establish causal effects or silently increase its influence.
 
 The central design principle is simple:
 
@@ -36,33 +32,49 @@ The central design principle is simple:
 
 Weak evidence, stale data or low confidence should cause suppression, refusal or a safe fallback—not a more fluent guess.
 
+## Current position
+
+Opti-U has completed controlled TRL5 technical validation using deterministic and generated scenarios. The platform includes:
+
+- bounded domains with explicit ownership;
+- wearable ingestion and normalisation;
+- physiological and behavioural signal processing;
+- typed events and narrow gateway interfaces;
+- deterministic controls around consent, safety and decision authority;
+- state estimation, forecasting and uncertainty handling;
+- anomaly suppression and minimum-sample gates;
+- traceable decisions, rollback and safe degradation.
+
+This establishes that the integrated platform can operate under controlled representative conditions and respond conservatively to deliberately difficult inputs. It does not establish live-user effectiveness, calibrated forecasts on human cohorts, production reliability at scale or institutional operation. Those are the next TRL6–7 objectives.
+
+Implementation, controlled validation, live operation and behavioural outcomes are separate stages and are reported separately.
+
+## What is private
+
+The production core remains private because it contains proprietary orchestration, behavioural specifications, safety policies and intervention-learning logic. Operational thresholds, internal contracts, infrastructure details, model artefacts, security findings and personal data are not published here.
+
+The projects here cover three areas:
+
+1. **Opti-U** — the product, architecture, governance model and path from TRL5 to production.
+2. **Governed Digital Twin Reference** — confidence-gated state estimation, forecasting and traceable refusal.
+3. **N-of-1 Evidence Gates** — sample, missingness, adherence and overlap gates for individual experiments.
+
+The two smaller packages use generated data, generic signal names and invented constants. They contain no production modules, schemas, fixtures, tests or thresholds, and they are not medical tools.
+
+## How it is built
+
+The code uses typed interfaces, deterministic tests and continuous integration. Examples can be run locally, and the limitations of each model are documented alongside it.
+
 ## Start here
 
 - [Why the category is missing](docs/category.md)
-- [Public architecture overview](docs/architecture-overview.md)
+- [Architecture overview](docs/architecture-overview.md)
 - [What “Digital Twin” means here](docs/digital-twin-definition.md)
 - [Governance principles](docs/governance-principles.md)
-- [Evidence ledger](docs/evidence-ledger.md)
+- [Validation record](docs/evidence-ledger.md)
 - [What remains to be proved](docs/trl5-to-trl7.md)
-- [What is public and what stays private](docs/evidence-boundaries.md)
+- [Repository boundaries](docs/evidence-boundaries.md)
 - [A synthetic journey through the loop](examples/synthetic-user-journey.md)
-
-## Evidence, with the boundary attached
-
-Opti-U has completed controlled TRL5 technical validation. That supports the claim that an integrated platform can operate under controlled representative conditions and degrade conservatively under deliberately difficult inputs.
-
-It does **not** establish live-user effectiveness, calibrated forecasts on human cohorts, production reliability at scale or institutional operation. Those are explicit TRL6–7 objectives.
-
-That distinction matters. Implementation evidence, controlled validation, live operational evidence and behavioural outcome evidence are different things. We publish them as different things.
-
-## Public reference work
-
-Two clean-room companion repositories make selected principles executable without reproducing Opti-U:
-
-- **Governed Digital Twin Reference** — synthetic state estimation, confidence, forecasting and refusal.
-- **N-of-1 Evidence Gates** — synthetic experimentation where `INCONCLUSIVE` is a valid result.
-
-These are educational reference implementations. They are not medical tools and are not extracted from the production platform.
 
 ## About
 

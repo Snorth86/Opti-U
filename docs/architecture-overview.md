@@ -1,4 +1,4 @@
-# Public architecture overview
+# Architecture overview
 
 This is a deliberately abstract view. It shows the separation of responsibilities without publishing internal contracts, domain names, thresholds, event taxonomies or production topology.
 

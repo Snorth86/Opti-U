@@ -1,5 +1,5 @@
 # Contributing
 
-Corrections to public documentation are welcome through a focused issue or pull request.
+Corrections and useful improvements are welcome. Open an issue or send a focused pull request.
 
-Do not submit production code, internal documentation, real health data, proprietary thresholds, security findings or material obtained under NDA. Contributions must preserve the non-clinical boundary and distinguish implementation evidence from live outcome evidence.
+Do not submit production code, internal documents, real health data, proprietary thresholds, security findings or anything covered by an NDA. Keep all examples non-clinical and be clear about whether a result comes from a model, a controlled test or real-world use.

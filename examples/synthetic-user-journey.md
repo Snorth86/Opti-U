@@ -1,6 +1,6 @@
 # A synthetic journey through the loop
 
-This fictional example illustrates the public information flow only. It is not a product screenshot, protocol, recommendation engine or clinical scenario.
+Alex is fictional, and the numbers are illustrative. The journey shows how information moves through the system; it is not a clinical scenario or a description of medical care.
 
 ## Connection: the journey starts with history
 
@@ -60,9 +60,9 @@ The physiological baseline remains available; the experiment conclusion is what 
 
 **Output:** `INCONCLUSIVE`
 
-## Evidence supports a bounded conclusion
+## The data supports a limited conclusion
 
-After a better-quality comparison, the measured outcome is directionally positive and uncertainty is inside the fictional demonstration's declared boundary.
+After a better-quality comparison, the measured outcome is directionally positive and uncertainty falls inside the experiment's stated range.
 
 The result is recorded with its data window, missingness, adherence and uncertainty. It can inform the next user-approved step. It does not become a universal rule.
 
