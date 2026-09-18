@@ -18,3 +18,7 @@ The platform has completed controlled TRL5 technical validation using determinis
 Large language models are limited to interaction and explanation. They do not own user state, determine safety or establish causal effects.
 
 TRL6 and TRL7 work will address live-user outcomes, forecast calibration, production reliability, security assurance and institutional operation.
+
+## Future direction 
+
+We are moving toward closed alpha testing, which will progress into early beta. The classical ML layer around the algorithmic twin stack should evolve to deep learning, plus purpose built and domain specific small models around the twin intelligence.
